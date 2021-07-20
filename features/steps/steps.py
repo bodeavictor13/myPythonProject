@@ -3,38 +3,38 @@ from behave import *
 # backgound
 @given(u'a global administrator named "Greg"')
 def step_impl(context):
-    print('STEP: Given a global administrator named "Greg"')
+    1+1
 
 
 @given(u'a blog named "Greg\'s anti-tax rants"')
 def step_impl(context):
-    print('STEP: Given a blog named "Greg\'s anti-tax rants"')
+    1+1
 
 
 @given(u'a customer named "Wilson"')
 def step_impl(context):
-    print('STEP: Given a customer named "Wilson"')
+    1+1
 
 # table comming
 @given(u'the following people exist')
 def step_impl(context):
         for row in context.table:
-            print(row)
+            a = row
 
 
 @given(u'some precondition 1')
 def step_impl(context):
-    print(u'STEP: Given some precondition 1')
+    1+1
 
 
 @when(u'some action by the actor')
 def step_impl(context):
-    print('STEP: When some action by the actor')
+    1+1
 
 
 @when(u'some other action')
 def step_impl(context):
-    print('STEP: When some other action')
+    1+1
 
 
 @then(u'some testable outcome is achieved')
@@ -50,23 +50,23 @@ def step_impl(context):
 
 @given(u'something else we can check happens too')
 def step_impl(context):
-    print('STEP: Given something else we can check happens too')
+    1+1
 
 
 # scenario 2
 @given(u'some precondition')
 def step_impl(context):
-    print('STEP: Given some precondition')
+    context.scenario.skip(reason="skip scenario 2")
 
 
 @given(u'some other precondition with doc string')
 def step_impl(context):
-    print('STEP: Given some other precondition with doc string')
+    1+1
 
 
 @when(u'yet another action')
 def step_impl(context):
-    print('STEP: When yet another action')
+    1+1
 
 # # *
 # @given('something else we can check happens too')
@@ -76,24 +76,25 @@ def step_impl(context):
 
 @given(u'I don\'t see something else')
 def step_impl(context):
-    print('STEP: Given I don\'t see something else')
+    1+1
 
 
 # scenario 3
 @given(u'the cow weighs {weight} kg')
 def step_impl(context, weight):
-    print('STEP: Given the cow weighs kg: ' + weight)
+    1+1
+    # print('STEP: Given the cow weighs kg: ' + weight)
 
 
 @when(u'we calculate the feeding requirements')
 def step_impl(context):
-    print('STEP: When we calculate the feeding requirements')
+    1+1
 
 
 @then(u'the energy should be {energy} MJ')
 def step_impl(context, energy):
     # print('STEP: Then the energy should be MJ: ' + energy)
-    assert(1==0)
+    assert(1==1)
 
 
 # @given(u'a blog named "Greg\'s anti-tax rants"')

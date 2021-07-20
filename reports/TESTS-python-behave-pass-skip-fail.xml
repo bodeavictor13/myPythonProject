@@ -1,0 +1,87 @@
+<testsuite name="dealer.Some terse yet descriptive text of what is desired like bla bla" tests="4" errors="0" failures="1" skipped="1" time="0.015506" timestamp="2021-07-20T10:58:42.353139" hostname="ZZchenhaok01"><testcase classname="dealer.Some terse yet descriptive text of what is desired like bla bla" name="Some determinable business situation" status="failed" time="0.006509"><failure type="AssertionError" message="">
+<![CDATA[
+Failing step: Then some testable outcome is achieved ... failed in 0.003s
+Location: features/dealer.feature:21
+Traceback (most recent call last):
+  File "c:\users\chenhaok.corpdom\appdata\local\programs\python\python39\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "c:\users\chenhaok.corpdom\appdata\local\programs\python\python39\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\steps.py", line 43, in step_impl
+    assert(1==0)
+AssertionError
+]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Quick @full @annoy
+  Scenario: Some determinable business situation
+    Given a global administrator named "Greg" ... passed in 0.000s
+    * a blog named "Greg's anti-tax rants" ... passed in 0.001s
+    * a customer named "Wilson" ... passed in 0.000s
+    Given the following people exist ... passed in 0.001s
+      | name | email          | phone |
+      | Aila | aila@email.com | 123   |
+      | Joe  | joe@email.com  | 234   |
+    And some precondition 1 ... passed in 0.001s
+    When some action by the actor ... passed in 0.000s
+    And some other action ... passed in 0.001s
+    Then some testable outcome is achieved ... failed in 0.003s
+    And something else we can check happens too ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="dealer.Some terse yet descriptive text of what is desired like bla bla" name="Some another scenario 2" status="skipped" time="0.001499"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+
+  @Quick @nightly
+  Scenario: Some another scenario 2
+    Given a global administrator named "Greg" ... passed in 0.000s
+    * a blog named "Greg's anti-tax rants" ... passed in 0.000s
+    * a customer named "Wilson" ... passed in 0.000s
+    Given some precondition ... skipped in 0.000s
+    And some other precondition with doc string ... skipped in 0.000s
+      """
+      this is comment
+      """
+    When some action by the actor ... skipped in 0.000s
+    And yet another action ... skipped in 0.000s
+    Then some testable outcome is achieved ... skipped in 0.000s
+    * something else we can check happens too ... skipped in 0.000s
+    But I don't see something else ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="dealer.Some terse yet descriptive text of what is desired like bla bla" name="feeding a cow cow1 yum yum yum -- @1.1 " status="passed" time="0.004999"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: feeding a cow cow1 yum yum yum -- @1.1 
+    Given a global administrator named "Greg" ... passed in 0.000s
+    * a blog named "Greg's anti-tax rants" ... passed in 0.001s
+    * a customer named "Wilson" ... passed in 0.001s
+    Given the cow weighs 450 kg ... passed in 0.001s
+    When we calculate the feeding requirements ... passed in 0.001s
+    Then the energy should be 26500 MJ ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="dealer.Some terse yet descriptive text of what is desired like bla bla" name="feeding a cow cow2 yum yum yum -- @1.2 " status="passed" time="0.002499"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: feeding a cow cow2 yum yum yum -- @1.2 
+    Given a global administrator named "Greg" ... passed in 0.000s
+    * a blog named "Greg's anti-tax rants" ... passed in 0.001s
+    * a customer named "Wilson" ... passed in 0.000s
+    Given the cow weighs 500 kg ... passed in 0.001s
+    When we calculate the feeding requirements ... passed in 0.000s
+    Then the energy should be 29500 MJ ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
