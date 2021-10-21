@@ -41,13 +41,13 @@ def step_impl(context):
 @then(u'some testable outcome is achieved')
 def step_impl(context):
     # print('STEP: Then some testable outcome is achieved')
-    assert(1==1)
+    assert(1==0)
 
 
 @then(u'something else we can check happens too')
 def step_impl(context):
     # print('STEP: Then something else we can check happens too')
-    assert(1==1)
+    assert(1==0)
 
 @given(u'something else we can check happens too')
 def step_impl(context):
@@ -96,7 +96,7 @@ def step_impl(context):
 @then(u'the energy should be {energy} MJ')
 def step_impl(context, energy):
     # print('STEP: Then the energy should be MJ: ' + energy)
-    assert(1==1)
+    assert(1==0)
 
 
 # @given(u'a blog named "Greg\'s anti-tax rants"')
