@@ -57,7 +57,8 @@ def step_impl(context):
 # scenario 2
 @given(u'some precondition')
 def step_impl(context):
-    context.scenario.skip(reason="skip scenario 2")
+    1+1
+#    context.scenario.skip(reason="skip scenario 2")
 
 
 @given(u'some other precondition with doc string')
