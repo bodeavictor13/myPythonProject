@@ -16,10 +16,11 @@ def step_impl(context):
     1+1
 
 # table comming
-@given(u'the following people exist')
+@given(u'the following people exist:')
 def step_impl(context):
-        for row in context.table:
-            a = row
+    1+1
+#        for row in context.table:
+#            a = row
 
 
 @given(u'some precondition 1')
@@ -40,13 +41,13 @@ def step_impl(context):
 @then(u'some testable outcome is achieved')
 def step_impl(context):
     # print('STEP: Then some testable outcome is achieved')
-    assert(1==0)
+    assert(1==1)
 
 
 @then(u'something else we can check happens too')
 def step_impl(context):
     # print('STEP: Then something else we can check happens too')
-    assert(1==0)
+    assert(1==1)
 
 @given(u'something else we can check happens too')
 def step_impl(context):
