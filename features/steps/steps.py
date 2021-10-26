@@ -36,6 +36,7 @@ def step_impl(context):
 @when(u'some other action')
 def step_impl(context):
     1+1
+    raise NotImplementedError(u'STEP: AND some other action')
 
 
 @then(u'some testable outcome is achieved')
@@ -64,6 +65,7 @@ def step_impl(context):
 @given(u'some other precondition with doc string')
 def step_impl(context):
     1+1
+    raise NotImplementedError(u'STEP: And some other precondition with doc string')
 
 
 @when(u'yet another action')
