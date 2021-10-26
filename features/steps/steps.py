@@ -26,6 +26,7 @@ def step_impl(context):
 @given(u'some precondition 1')
 def step_impl(context):
     1+1
+    context.scenario.skip(reason="some precondition 1")
 
 
 @when(u'some action by the actor')
@@ -58,7 +59,7 @@ def step_impl(context):
 @given(u'some precondition')
 def step_impl(context):
     1+1
-#    context.scenario.skip(reason="skip scenario 2")
+    context.scenario.skip(reason="skip scenario 2")
 
 
 @given(u'some other precondition with doc string')
