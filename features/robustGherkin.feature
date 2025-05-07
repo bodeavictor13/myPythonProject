@@ -8,6 +8,7 @@ Feature: Some terse yet descriptive text of what is desired like bla bla
     Given a global administrator named "Greg"
     âœ½ a blog named "Greg's anti-tax rants"
     * a customer named "Wilson"
+    
   @Quick @full @annoy
   @TSCID1001
   Scenario: Some determinable business situation
