@@ -29,7 +29,7 @@ Feature: Some terse yet descriptive text of what is desired like bla bla
     And yet another action
     Then some testable outcome is achieved
     âœ½ something else we can check happens too
-    But I don't see something else
+    smth
   @TSCID1003
   Scenario Outline: feeding a cow <name> yum yum yum
   scenario outline
