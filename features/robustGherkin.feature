@@ -6,7 +6,7 @@ Feature: Some terse yet descriptive text of what is desired like bla bla
   lines
   Background:
     Given a global administrator named "Greg"
-    * a blog named "Greg's anti-tax rants"
+    âœ½ a blog named "Greg's anti-tax rants"
     * a customer named "Wilson"
   @Quick @full @annoy
   @TSCID1001
@@ -26,7 +26,7 @@ Feature: Some terse yet descriptive text of what is desired like bla bla
     When some action by the actor
     And yet another action
     Then some testable outcome is achieved
-    * something else we can check happens too
+    âœ½ something else we can check happens too
     But I don't see something else
   @TSCID1003
   Scenario Outline: feeding a cow <name> yum yum yum
