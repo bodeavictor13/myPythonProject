@@ -10,7 +10,7 @@ Feature: Some terse yet descriptive text of what is desired like bla bla
     * a customer named "Wilson"
     
   @Quick @full @annoy
-  @TSCID1001
+  @TSCID10011
   Scenario: Some determinable business situation
     Given the following people exist:
     And some precondition 1
@@ -18,7 +18,7 @@ Feature: Some terse yet descriptive text of what is desired like bla bla
     And some other action
     Then some testable outcome is achieved
     And something else we can check happens too
-    Given something
+    Given
   @Quick @nightly
   @TSCID1002
   Scenario: Some another scenario 2
